@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --main-color: hsl(0, 0%, 95%);
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+main section {
+    padding: 50px;
+}
+main section h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display";
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+main section p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 100px;
+    font-family: "Lexend Deca";
+    font-size: 1.11em;
+}
+main section button {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 30px;
+    padding: 10px 40px;
+    border-color: hsl(0, 0%, 95%);
+    border-style: solid;
+    text-transform: capitalize;
+    font-family: "Lexend Deca";
+}
+main section button:hover {
+    background-color:inherit;
+    color:hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+main .sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+main .sedans button {
+    color:hsl(31, 77%, 52%)
+}
+main .suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+main .suvs button {
+    color: hsl(184, 100%, 22%);
+}
+main .luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+main .luxury button {
+    color: hsl(179, 100%, 13%);
+}
+@media (max-width: 766px) {
+    main {
+        margin: 40px;
+    }
+    main section {
+        padding: 30px;
+    }
+}
